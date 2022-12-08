@@ -390,7 +390,6 @@ section {
 	background-position: center;
 	background-size: cover;
 	color: #fff;
-	padding-bottom: 70px;
 }
 
 .blackf {
@@ -436,7 +435,7 @@ section {
 	left: 0;
 
 	transform: translateY(-90px);
-	height: 55%;
+	height: 380px;
 	width: 100%;
 }
 
