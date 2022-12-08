@@ -1,0 +1,268 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+
+}
+
+.burger {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: 320px
+
+
+}
+
+.line {
+  width: 20px;
+  height: 3px;
+  background: white;
+  transition: .3s;
+  z-index: 10;
+
+}
+.top {
+  background: #333;
+  padding: 15px 20px 20px 0px;
+}
+
+.menu {
+  background: #9999FF;
+  position: absolute;
+  width: 200px;
+  height: 90%;
+  transform: translateY(287px) translateX(-320px) scaleY(0) scaleX(0);
+  transform-origin: top left;
+  transition: .3s;
+  color: #9999FF;
+  z-index: 1;
+  opacity: 1;
+
+}
+
+.burger:hover .menu {
+  transform: translateY(287px)    translateX(-320px) scaleY(1);
+  color: white
+
+}
+
+.optprnt {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  text-align: left;
+
+}
+
+.opt {
+
+  text-transform: uppercase;
+  margin-bottom: 130px;
+  margin-left: 20px;
+  margin-top: -5px;
+  transition: .3s;
+}
+
+.opthr {
+  background: #B7F6D3;
+  border: none;
+  height: 2px;
+}
+
+.cross1 {
+  background: #9999FF;
+  height: 3px;
+  width: 20px;
+  display: inline-block;
+  position: absolute;
+  transform: rotate(45deg) translateY(5px) translateX(5px)
+}
+
+.cross2 {
+  background: #9999FF;
+  height: 3px;
+  width: 20px;
+  display: inline-block;
+  position: absolute;
+  transform: rotate(-45deg) translateY(5px) translateX(-5px)
+}
+
+.cross {
+  transform: translateX(320px) translateY(-20px);
+  height: 20px;
+  width: 20px;
+  background: #333;
+  position: absolute;
+}
+
+
+#lineprnt {
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 20px;
+  z-index: 1;
+  transition:0.3s;
+}
+
+.burger:hover #lineprnt {
+  transform: scale(2);
+  z-index:-1;
+  opacity: 0;
+  
+}
+
+.homearo {
+  font-size: 25px;
+  display: inline-block;
+  transform: translateY(3px) translateX(10px);
+  transition: .3s;
+}
+
+.opt:hover .homearo {
+  transform: translateY(3px) translateX(10px) rotate(90deg);
+  color:black;
+}
+.optchild {
+  position: absolute;
+  list-style: none;
+  font-size: 15px;
+  width: 90%;
+  margin-left: 20px;
+  height: 120px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  margin-top: 10px;
+  
+}
+
+.opthome {
+  color: #333;
+  transform: translateX(-15px);
+  transition: 0.3s;
+}
+
+.opthome::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 3px;
+  border-radius: 20%;
+  background: #fff;
+  transform: translateY(-5px) scaleX(0);
+  transform-origin: left;
+  transition: .3s;
+}
+.opthome:hover:before {
+  transform: translateY(-5px) scaleX(1);;
+}
+.opt:hover .optchild {
+  transform: scaleX(1);
+  opacity: 1;
+  transition:.5s;
+  
+}
+.opt:hover {
+  color: white;
+}
+
+.opthome:hover {
+  transform: translateX(0px);
+}
+
+#Logo{
+  position: absolute;
+  transform: translateX(20px) translateY(-10px);
+  height:50px;
+  
+}
+#logonm{
+  position: absolute;
+  transform: translateX(80px) translateY(-5px);
+  color:white;
+}
+#logonm1{
+  font-family: cursive;
+  font-size: 25px;
+  color:#76FF03;
+}
+
+#logonm2{
+  font-family: cursive;
+  font-size: 25px;
+  color:#20A9CD;
+}
+#logonm3{
+  width:40px;
+  display: block;
+  height:42px;
+  border:2px solid #20A9CD;
+  transition: 3s;
+  border-radius:0% 50% 30% 50%;
+  position:absolute;
+  transform: translateY(-40px) translateX(40px) scale(.7);
+
+}
+
+#ione{
+  position: absolute;
+  display:inline-block;
+  width:10px;
+  height:7px;
+  border-radius:100%;
+  border:1px solid #76FF03;
+  transform:translateY(10px) translateX(5px);
+}
+
+
+#itwo{
+  position: absolute;
+  display:inline-block;
+  width:10px;
+  height:7px;
+  border-radius:100%;
+  border:1px solid #76FF03;
+  transform:translateY(10px) translateX(22px);
+}
+
+#mos{
+  height:15px;
+  width:25px;
+  display:inline-block;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 50%;
+  border-top:2px solid #FFBDDD;
+  transform: translateX(7px) translateY(20px)
+}
+
+#mouth{
+  display: inline-block;
+  height:15px;
+  width:25px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 10%;
+  border-bottom:2px solid #FFBDDD;
+  transform: translateY(-17px) translateX(7px)
+}
+
+#ibol{
+  background:#76FF03;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  transform: translateY(-17px) translateX(.5px)
+}
